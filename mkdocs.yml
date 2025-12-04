@@ -5,7 +5,7 @@ site_dir: site
 
 nav:
   - Inicio: index.md
-  - Minima: ejercicio1.md
-  - Lagrange: ejercicio2.md
-  - YAT: ejercicio3.md
-theme: material
+  - Minima: Ejercicio1.md
+  - Lagrange: Ejercicio2.md
+  - YAT: Ejercicio3.md
+theme: readthedocs
