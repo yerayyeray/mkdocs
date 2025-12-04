@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/yerayyeray/mkdocs.git/Ejercicio1/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Minima - Documentación Yeray Gutierrez Mullor</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Minima";
+        var mkdocs_page_input_path = "Ejercicio1.md";
+        var mkdocs_page_url = "/yerayyeray/mkdocs.git/Ejercicio1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentación Yeray Gutierrez Mullor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Minima</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-actualizar-debian-13">1. Actualizar Debian 13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-instalacion-de-ruby-y-jekyll">2. Instalación de Ruby y Jekyll</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ruby">Ruby:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#jekyll">Jekyll:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-crear-el-sitio">3. Crear el sitio:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#crear-el-sitio-en-jekyll">Crear el sitio en jekyll:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-crear-el-repositorio-en-git">4. Crear el repositorio en git:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-configuracion-del-sitio">5. Configuración del sitio:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modificar-el-archivo-de-configuracion-del-sitio">Modificar el archivo de configuración del sitio:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modificar-la-pantalla-de-inicio-del-sitio">Modificar la pantalla de inicio del sitio:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modificar-la-pagina-de-acerca-de-en-el-sitio">Modificar la pagina de "Acerca de" en el sitio:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#anadir-los-posts-al-sitio">Añadir los posts al sitio:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-subir-el-sitio-a-github-pages">6. Subir el sitio a GitHub Pages:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-sitio-web-subido-en-github-pages">7. Sitio web subido en GitHub Pages:</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicio2/">Lagrange</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicio3/">YAT</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentación Yeray Gutierrez Mullor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Minima</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ejercicio-1-creacion-de-un-sitio-web-en-jekyll-con-el-tema-minima">Ejercicio 1: Creación de un sitio web en Jekyll con el tema Minima</h1>
+<h2 id="1-actualizar-debian-13">1. Actualizar Debian 13</h2>
+<p>Antes de nada, hay que actualizar debian para que no esté desactualizado:</p>
+<p><code>sudo apt update &amp;&amp; sudo apt upgrade -y</code></p>
+<h2 id="2-instalacion-de-ruby-y-jekyll">2. Instalación de Ruby y Jekyll</h2>
+<h3 id="ruby">Ruby:</h3>
+<p>Instalar Ruby y los paquetes necesarios:</p>
+<p><code>sudo apt install ruby-full build-essential zlib1g-dev -y</code></p>
+<p>Añadir al .bashrc la variable de entorno GEM_HOME para que las gemas se instalen en ~/gems:</p>
+<p><code>echo 'export GEM_HOME="$HOME/gems"' &gt;&gt; ~/.bashrc</code></p>
+<p>Añadir al .bashrc una línea que incluya el directorio de binarios de gemas en el PATH:</p>
+<p><code>echo 'export PATH="$HOME/gems/bin:$PATH"' &gt;&gt; ~/.bashrc</code></p>
+<p>Recarga el archivo .bashrc para aplicar los cambios:</p>
+<p><code>source ~/.bashrc</code></p>
+<h3 id="jekyll">Jekyll:</h3>
+<p>Instalar las gemas jekyll y bundler en tu sistema:</p>
+<p><code>gem install jekyll bundler</code></p>
+<h2 id="3-crear-el-sitio">3. Crear el sitio:</h2>
+<h3 id="crear-el-sitio-en-jekyll">Crear el sitio en jekyll:</h3>
+<p>Crear un nuevo sitio Jekyll llamado minima con la estructura básica inicial:</p>
+<p><code>jekyll new minima</code></p>
+<h2 id="4-crear-el-repositorio-en-git">4. Crear el repositorio en git:</h2>
+<p>Primero hay que crear el repositorio en local con Git mediante los comandos:</p>
+<pre><code>git init
+git remote add origin &quot;https://github.com/yerayyeray/minima.git&quot;
+</code></pre>
+<p>Ahora hay que crear el repositorio en GitHub:</p>
+<p><img alt="CrearRepositorio" src="../img/Ejercicio1/crearrepositoriogithub.png" /></p>
+<p><img alt="CrearRepositorio2" src="/img/Ejercicio1/crearrepositoriogithub2.png" /></p>
+<p><img alt="Repositorio" src="/img/Ejercicio1/repositorio.png" /></p>
+<h2 id="5-configuracion-del-sitio">5. Configuración del sitio:</h2>
+<p>Iniciar el servidor local de Jekyll usando las dependencias del proyecto y lo hace accesible desde mi maquina fisica a traves de la url http://localhost:4000 y poder observar los cambios que se hagan en el sitio para que esté listo antes de subirlo a mir repositorio de github:</p>
+<p><code>bundle exec jekyll serve --host 0.0.0.0</code></p>
+<h3 id="modificar-el-archivo-de-configuracion-del-sitio">Modificar el archivo de configuración del sitio:</h3>
+<p>El archivo <code>_config.yml</code> sirve para definir la configuración global de tu sitio Jekyll, como título, tema, URL y ajustes generales y para personalizar el sitio con nuestros datos, hay que rellenar los campos con nuestros datos</p>
+<p><img alt="config.yaml" src="/img/Ejercicio1/config.yaml.png" /></p>
+<h3 id="modificar-la-pantalla-de-inicio-del-sitio">Modificar la pantalla de inicio  del sitio:</h3>
+<p>Para modificar el la pagina principal del sitio, hay que modificar el archivo <code>index.markdown</code> con la estructura e información del sitio web que se quiere crear</p>
+<p><img alt="index.markdown" src="/img/Ejercicio1/index.markdown.png" /></p>
+<h3 id="modificar-la-pagina-de-acerca-de-en-el-sitio">Modificar la pagina de "Acerca de" en el sitio:</h3>
+<p>La pagina de "Acerca de" se pude modificar en el archivo <code>about.markdown</code> en el que hay que poner información sobre lo que se va a encontrar en el sitio web o sobre su autor etc.</p>
+<p><img alt="about.markdown" src="/img/Ejercicio1/about.markdown.png" /></p>
+<h3 id="anadir-los-posts-al-sitio">Añadir los posts al sitio:</h3>
+<p>Para crear los posts de este blog, hay que ir a la carpeta <code>/_posts</code></p>
+<p><img alt="_post" src="/img/Ejercicio1/carpeta_posts.png" /></p>
+<p>Crear archivos de markdown con el formato de nombre <code>año-mes-dia-nombre_del_post</code>, como por ejemplo en mi caso <code>2025-11-27-Colaboraciones.markdown</code> y los post tendran que tener una estructura como esta:</p>
+<p><img alt="post" src="/img/Ejercicio1/post.png" /></p>
+<h2 id="6-subir-el-sitio-a-github-pages">6. Subir el sitio a GitHub Pages:</h2>
+<p>Hay que subir el repositorio primero hay que hacer los commits de todos los cambios que se han hecho en el repositorio si no se han hecho con los comandos:</p>
+<pre><code>git add .
+git commit -m &quot;comentario&quot;
+</code></pre>
+<p>Si se quiere subir directamente a GitHub Pages se puede hacer subiendolo al remoto desde la rama gh-pages, la cual se puede crear así:</p>
+<blockquote>
+<p>git checkout -b gh-pages</p>
+</blockquote>
+<p>Si no se hace así, se puede hacer desde la interfaz de GitHub desde aquí:</p>
+<p><img alt="ghpages" src="/img/Ejercicio1/ghpages.png" /></p>
+<p>Despues, se hara el push con el comando:</p>
+<p><code>git push origin gh-pages</code></p>
+<h2 id="7-sitio-web-subido-en-github-pages">7. Sitio web subido en GitHub Pages:</h2>
+<p>La url de la pagina es esta:</p>
+<p>https://yerayyeray.github.io/minima/</p>
+<p>Este es el aspecto que tiene el sitio web ya subido en GitHub Pages:</p>
+<p>Inicio:</p>
+<p><img alt="inicio" src="/img/Ejercicio1/inicio.png" /></p>
+<p>Acerca de:</p>
+<p><img alt="acercade" src="/img/Ejercicio1/acercade.png" /></p>
+<p>Posts:</p>
+<p><img alt="post1" src="/img/Ejercicio1/post1.png" /></p>
+<p><img alt="post2" src="/img/Ejercicio1/post2.png" /></p>
+<p><img alt="post3" src="/img/Ejercicio1/post3.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Inicio"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Ejercicio2/" class="btn btn-neutral float-right" title="Lagrange">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Ejercicio2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
