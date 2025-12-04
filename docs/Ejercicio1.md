@@ -46,7 +46,7 @@ git remote add origin "https://github.com/yerayyeray/minima.git"
 
 Ahora hay que crear el repositorio en GitHub:
 
-![CrearRepositorio](./img/Ejercicio1/crearrepositoriogithub.png)
+![CrearRepositorio](img/Ejercicio1/crearrepositoriogithub.png)
 
 ![CrearRepositorio2](img/Ejercicio1/crearrepositoriogithub2.png)
 
