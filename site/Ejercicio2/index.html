@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/yerayyeray/mkdocs.git/Ejercicio2/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Lagrange - Documentación Yeray Gutierrez Mullor</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Lagrange";
+        var mkdocs_page_input_path = "Ejercicio2.md";
+        var mkdocs_page_url = "/yerayyeray/mkdocs.git/Ejercicio2/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentación Yeray Gutierrez Mullor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicio1/">Minima</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Lagrange</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicio3/">YAT</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentación Yeray Gutierrez Mullor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Lagrange</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="ejercicio-2-creacion-de-un-sitio-web-en-jekyll-con-el-tema-lagrange">Ejercicio 2: Creación de un sitio web en Jekyll con el tema Lagrange</h2>
+<h2 id="1-conseguir-el-tema-lagrange">1. Conseguir el tema Lagrange:</h2>
+<p>Para obtener el tema Lagrange y poder usarlo en nuestro repositorio, hay varios metodos, en este caso lo he obtenido haciendo un Fork al repositorio de GitHub del tema, para eso se puede buscar directamente el repositorio o ir desde la pagina <a href="http://jekyllthemes.org/">jekyllthemes.org</a></p>
+<p><img alt="jtlagrange" src="/img/Ejercicio2/jtlagrange.png" /></p>
+<p>Cuando estes en la pagina del tema, tienes que ir a homepage</p>
+<p><img alt="jtlagrangehp" src="/img/Ejercicio2/jtlagrangehp.png" /></p>
+<p>Una vez en el repositorio, hay que hacerle un fork para poder clonarlo en local y empezar a modificarlo</p>
+<p><img alt="fork" src="/img/Ejercicio2/fork.png" /></p>
+<p><img alt="fork2" src="../img/Ejercicio2/fork2.png" /></p>
+<p>Despues de hacer el fork, ya tendremos el repositorio con el tema Lagrange listo para configurarlo, ahora hay que ir a nuestra maquina local y clonar nuestro repositorio a local con el comando:</p>
+<p><code>git clone https://github.com/yerayyeray/Lagrange.git</code></p>
+<p>Ahora ya tenemos el repositorio clonado y podemos modificar los archivos para crear el nuevo sitio web</p>
+<p><img alt="clonado" src="/img/Ejercicio2/clonado.png" /></p>
+<p>En mi caso, tuve que actualizar la gema jekyll-sitemap e instalar jekyll-paginate:</p>
+<p><img alt="jekyll-sitemap" src="../img/Ejercicio2/jekyll-sitemap.png" /></p>
+<p><img alt="jekyll-paginate" src="../img/Ejercicio2/jekyll-paginate.png" /></p>
+<h2 id="2-configuracion-del-sitio">2. Configuración del sitio:</h2>
+<h3 id="archivo-de-configuracion-del-sitio">Archivo de configuración del sitio:</h3>
+<p>Ahora tenemos que configurar el archivo de configuración de <code>_config.yaml</code> del nuevo sitio</p>
+<p><img alt="_config.yaml" src="/img/Ejercicio2/_config.yaml.png" /></p>
+<h3 id="crear-los-posts-del-blog">Crear los posts del blog:</h3>
+<p>Crear los post es igual que en el otro sitio, los posts se guardan en <code>/_posts</code></p>
+<p><img alt="_posts" src="/img/Ejercicio2/_posts.png" /></p>
+<p>Y tendran que tener el mismo formato para el nombre de los archivos <code>año-mes-dia-nombre_del_post</code> y los post tendran esta estructura:</p>
+<p><img alt="post" src="/img/Ejercicio2/post.png" /></p>
+<h3 id="cambial-la-pagina-de-acerca-de">Cambial la pagina de "Acerca de":</h3>
+<p>Para personalizar la sección "Acerca de" hay que ir al archivo <code>about.md</code> en la carpeta <code>menu</code> y poner la información de nuestro sitio</p>
+<p><img alt="about.md" src="/img/Ejercicio2/about.md.png" /></p>
+<h3 id="pagina-de-contacto">Pagina de contacto:</h3>
+<p>Este tema tiene una pagina de contacto también en la carpeta <code>menu</code> el archivo <code>contact.md</code></p>
+<p><img alt="contact.md" src="/img/Ejercicio2/contact.md.png" /></p>
+<h2 id="3-subir-el-sitio-a-github-pages">3. Subir el sitio a GitHub Pages:</h2>
+<p>Antes de subir el repositorio primero hay que hacer los commits de todos los cambios que se han hecho en el repositorio si aún no se han hecho con los comandos:</p>
+<pre><code>git add .
+git commit -m &quot;comentario&quot;
+</code></pre>
+<p>Si se quiere subir directamente a GitHub Pages se puede hacer subiendolo al remoto desde la rama gh-pages, la cual se puede crear así:</p>
+<blockquote>
+<p>git checkout -b gh-pages</p>
+</blockquote>
+<p>Si no se hace así, se puede hacer desde la interfaz de GitHub desde aquí:</p>
+<p><img alt="ghpages" src="/img/Ejercicio1/ghpages.png" /></p>
+<p>Despues, se hara el push con el comando:</p>
+<p><code>git push origin gh-pages</code></p>
+<h2 id="4-sitio-web-subido-en-github-pages">4. Sitio web subido en GitHub Pages:</h2>
+<p>La url de la pagina es esta:</p>
+<p>https://yerayyeray.github.io/Lagrange/</p>
+<p>Este es el aspecto que tiene el sitio web ya subido en GitHub Pages:</p>
+<p>Inicio:</p>
+<p><img alt="inicio" src="/img/Ejercicio2/inicio.png" /></p>
+<p><img alt="autor" src="/img/Ejercicio2/autor.png" /></p>
+<p>Acerca de:</p>
+<p><img alt="acercade" src="/img/Ejercicio2/acercade.png" /></p>
+<p>Contacto:</p>
+<p><img alt="contacto" src="/img/Ejercicio2/contacto.png" /></p>
+<p>Posts:</p>
+<p><img alt="post1" src="/img/Ejercicio2/post1.png" /></p>
+<p><img alt="post2" src="/img/Ejercicio2/post2.png" /></p>
+<p><img alt="post3" src="/img/Ejercicio2/post3.png" /></p>
+<p><img alt="post4" src="/img/Ejercicio2/post4.png" /></p>
+<p><img alt="post5" src="/img/Ejercicio2/post5.png" /></p>
+<p>Todo:</p>
+<p><img alt="todo" src="/img/Ejercicio2/todo.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Ejercicio1/" class="btn btn-neutral float-left" title="Minima"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Ejercicio3/" class="btn btn-neutral float-right" title="YAT">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ejercicio1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Ejercicio3/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

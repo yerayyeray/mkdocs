@@ -1,0 +1,11 @@
+site_name: Documentación Yeray Gutierrez Mullor
+site_url: https://github.com/yerayyeray/mkdocs.git
+docs_dir: docs
+site_dir: activid
+
+nav:
+  - Inicio: index.md
+  - Minima: Ejercicio1.md
+  - Lagrange: Ejercicio2.md
+  - YAT: Ejercicio3.md
+theme: material
